@@ -1,0 +1,7 @@
+BASIC JAVASCRIPT NOTES
+
+1- // comentário inline;
+    /* comentário 
+    multi-line */;
+
+2 - 
