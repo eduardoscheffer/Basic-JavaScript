@@ -13,20 +13,3 @@ const quickCheck = (arr, elem) => {
     return arr.indexOf(elem) != -1 ? true: false;
 }
   console.log(quickCheck(['squash', 'onions', 'shallots'], 'mushrooms'));
-
-
-
-  // função que tira qualquer nested array de uma array, se contiver um elemento especifico nessas nested arrays:
-  // return a filtered version of the passed array such that any array nested within arr containing elem has been removed.
-function filteredArray(arr, elem) {
-  let newArr = [];
-  // Only change code below this line
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i].indexOf(elem) == -1) {
-      newArr.push(arr[i])
-    }
-  }
-  return newArr;
-}
-
-console.log(filteredArray([[3, 2, 3], [1, 6, 3], [3, 13, 26], [19, 3, 9]], 3));
