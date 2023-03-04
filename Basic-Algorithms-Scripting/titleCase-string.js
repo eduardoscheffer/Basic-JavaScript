@@ -12,3 +12,15 @@ function titleCase(str) {
   
   console.log(titleCase("HERE IS MY HANDLE HERE IS MY SPOUT"));
   // Here Is My Handle Here Is My Spout
+
+  function titleCase2(str) {
+    let newString = [];
+    str = str.split(' ')
+    for (let word of str) {
+      word = word.slice(0, 1).toUpperCase() + word.slice(1).toLowerCase();
+      newString.push(word);
+    }
+    return newString.join(' ');
+  }
+  
+  console.log(titleCase2("I'm a little tea pot"));
