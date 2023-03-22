@@ -9,7 +9,10 @@ for(let prop in obj) {
 // obj.b = 2
 // obj.c = 3
 
-
+const frutas = ['maça', 'pera', 'uva'];
+for (let i in frutas) { // vai retornas o índice de cada elemento da array
+  console.log(frutas[i]) // maça pera uva
+}
 
 // for...of:
 
@@ -36,11 +39,11 @@ iterable.forEach(item => console.log(item));
 URL("https://oieduardorabelo.medium.com/javascript-for-vs-foreach-vs-for-in-vs-for-of-44b8beffbfa0#:~:text=Vis%C3%A3o%20geral%20da%20sintaxe&text=Com%20as%20outras%20duas%20constru%C3%A7%C3%B5es,..of%20voc%C3%AA%20n%C3%A3o%20pode.")
 
 let pessoas = {
-    01: "Eduardo",
-    02: "Maria",
-    03: "Naruto",
-    04: "Ragnar",
-    05: "Bjorn"
+    a: "Eduardo",
+    b: "Maria",
+    c: "Naruto",
+    d: "Ragnar",
+    e: "Bjorn"
 };
 
 //forEach:
