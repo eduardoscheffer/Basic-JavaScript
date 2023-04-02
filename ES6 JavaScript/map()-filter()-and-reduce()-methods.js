@@ -58,3 +58,16 @@
     // acumulador = 2; valorAtual = 3;
     // acumulador = 5; valorAtual = NaN;
     // return 5; 
+
+    const rockets = [
+        { country: 'Russia', launches: 32 },
+        { country: 'Us', launches: 23 },
+        { country: 'China', launches: 16 },
+        { country: 'Europe', launches: 7 },
+        { country: 'India', launches: 4 },
+        { country: 'Japan', launches: 3 },
+    ];
+
+    totalLaunches = rockets.reduce( (counter, elemen) => counter + elemen, 0);
+
+    console.log(totalLaunches); // 85
