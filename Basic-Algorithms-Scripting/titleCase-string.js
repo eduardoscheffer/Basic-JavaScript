@@ -24,3 +24,13 @@ function titleCase(str) {
   }
   
   console.log(titleCase2("I'm a little tea pot"));
+
+  function titleCase3(str) {
+    let newString = [];
+    str.split(' ').forEach(el => {
+      newString.push(el[0].toUpperCase() + el.slice(1).toLowerCase());
+    })
+    return newString.join(' ');
+  }
+  
+  console.log(titleCase3('sHoRt AnD sToUt')); // Short And Stout
