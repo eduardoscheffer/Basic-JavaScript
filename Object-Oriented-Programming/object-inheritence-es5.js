@@ -18,8 +18,8 @@ Animal.prototype.play = function (length) {
   this.energy -= length;
 }
 
-function Dog (name, energyy, breed) {
-  Animal.call(this, name energy); // chama a função Animal no contexto de Dog
+function Dog (name, energy, breed) {
+  Animal.call(this, name, energy); // chama a função Animal no contexto de Dog
   
   this.breed = breed;
 }
